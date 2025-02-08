@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Elimina el espacio alrededor del body */
+    padding: 0;
+    background-color: #ddd;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+   
+}
+
+.logo {
+    flex: 1;
+    font-size: 24px;
+    padding-left: 240px;
+}
+
+.menu {
+    display: flex;
+    flex: 3;
+    justify-content: space-between;
+    padding-right: 240px;
+    padding-left: 60px;
+  
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    
+} 
+
+
+
+
+.noticias {
+    border-top: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 20px;
+    margin: 80px 20px;
+ 
+}
+
+.noticia {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    width: calc(50% - 20px);
+
+}
+
+.noticia-destacada {
+    /*grid-column: span 4;*/
+    width: 100%;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.imagen {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.descripcion {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.pie-de-pagina {
+    
+   
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:60px;
+}
+
+
+version_2
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    flex: 1;
+    font-size: 24px;
+    padding-left: 240px;
+}
+
+.menu {
+    display: flex;
+    flex: 3;
+    justify-content: space-between;
+    padding-right: 240px;
+    padding-left: 60px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajuste automático del número de columnas */
+    gap: 20px;
+    padding: 80px 20px 20px;
+    margin-top: 60px;
+}
+
+.noticia, .noticia-destacada {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* La noticia destacada ocupa toda la fila */
+.noticia-destacada {
+    grid-column: span 2; /* Ocupa toda la fila */
+    width: 100%;
+}
+
+.noticia:last-child {
+    grid-column: span 1; /* La última noticia debe ocupar su espacio */
+}
+
+/* Si la última noticia está sola en su línea, ocupa todo el ancho */
+.noticias > .noticia:last-child {
+    grid-column: span 2;
+}
+
+.imagen {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.descripcion {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.pie-de-pagina {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
