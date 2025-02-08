@@ -1,0 +1,2 @@
+Nuevo archivo de texto
+cambio_2 al nuevo_archivo
